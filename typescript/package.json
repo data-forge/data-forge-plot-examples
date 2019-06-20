@@ -9,11 +9,11 @@
   "author": "ashley@codecapers.com.au",
   "license": "MIT",
   "dependencies": {
-    "data-forge-plot": "*",
-    "@data-forge-plot/render": "*",
-    "data-forge": "*",
-    "data-forge-fs": "*",
-    "data-forge-indicators": "*",
+    "data-forge-plot": "0.6.0",
+    "@data-forge-plot/render": "0.0.2",
+    "data-forge": "1.7.2",
+    "data-forge-fs": "0.0.7",
+    "data-forge-indicators": "0.2.5",
     "fs-extra": "^7.0.1"
   },
   "devDependencies": {
