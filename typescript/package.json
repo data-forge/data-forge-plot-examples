@@ -9,7 +9,7 @@
   "author": "ashley@codecapers.com.au",
   "license": "MIT",
   "dependencies": {
-    "data-forge-plot": "0.6.0",
+    "data-forge-plot": "0.6.2",
     "@data-forge-plot/render": "0.0.2",
     "data-forge": "1.7.2",
     "data-forge-fs": "0.0.7",

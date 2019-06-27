@@ -42,6 +42,12 @@ async function main(): Promise<void> {
                         family: "Courier New"
                     },
                 },
+                ticks: {
+                    font: {
+                        size: "12px",
+                        family: "Courier New"
+                    },
+                },
             },
             y: { 
                 label: {
@@ -51,6 +57,12 @@ async function main(): Promise<void> {
                         family: "Courier New"
                     },
                 },
+                ticks: {
+                    font: {
+                        size: "15px",
+                        family: "Arial"
+                    },
+                },
             },
             y2: { 
                 label: {
@@ -58,6 +70,12 @@ async function main(): Promise<void> {
                     font: {
                         size: "1.2em",
                         family: "Courier New"
+                    },
+                },
+                ticks: {
+                    font: {
+                        size: "15px",
+                        family: "Arial"
                     },
                 },
             },
