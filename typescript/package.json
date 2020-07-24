@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "data-forge-plot": "0.6.3",
-    "@data-forge-plot/render": "0.0.3",
+    "@data-forge-plot/render": "0.0.4",
     "data-forge": "1.7.3",
     "data-forge-fs": "0.0.7",
     "data-forge-indicators": "0.2.5",
