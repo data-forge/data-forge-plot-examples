@@ -9,7 +9,7 @@ const versicolor_y = [ 1.4, 1.5, 1.5, 1.3, 1.5, 1.3, 1.6, 1.0, 1.3, 1.4, 1.0, 1.
 
 import { DataFrame } from "data-forge";
 import "data-forge-plot";
-import "@data-forge-plot/render";
+import "@plotex/render-image";
 import * as fs from "fs-extra";
 import * as path from "path";
 import { ChartType } from "data-forge-plot";
@@ -36,7 +36,6 @@ async function main(): Promise<void> {
         .y()
             .addSeries("versicolor_y");
     await plot.renderImage(path.join(outputPath, "image.png"), { openImage: false });
-    await plot.exportWeb(path.join(outputPath, "web"), { overwrite: true, openBrowser: false });
 }
 
 main()

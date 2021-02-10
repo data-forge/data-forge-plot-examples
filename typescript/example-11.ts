@@ -6,7 +6,7 @@ import * as dataForge from "data-forge";
 import "data-forge-fs";
 import "data-forge-indicators";
 import "data-forge-plot";
-import "@data-forge-plot/render";
+import "@plotex/render-image";
 import * as fs from "fs-extra";
 import * as path from "path";
 
@@ -22,7 +22,6 @@ async function main(): Promise<void> {
 
     const plot = df.plot({}, { x: "date", y: [ "close", "upper", "middle", "lower" ] });
     await plot.renderImage(path.join(outputPath, "image.png"), { openImage: false });
-    await plot.exportWeb(path.join(outputPath, "web"), { overwrite: true, openBrowser: false });
 }
 
 main()

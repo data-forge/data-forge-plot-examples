@@ -10,7 +10,7 @@ const data2 = [130, 340, 200, 500, 250, 350];
 
 import { DataFrame } from "data-forge";
 import "data-forge-plot";
-import "@data-forge-plot/render";
+import "@plotex/render-image";
 import * as fs from "fs-extra";
 import * as path from "path";
 
@@ -33,7 +33,6 @@ async function main(): Promise<void> {
     
     const plot = df.plot({}, { x: "date", y: [ "data1", "data2" ]});
     await plot.renderImage(path.join(outputPath, "image.png"), { openImage: false });
-    await plot.exportWeb(path.join(outputPath, "web"), { overwrite: true, openBrowser: false });
 }
 
 main()

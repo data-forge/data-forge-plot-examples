@@ -10,7 +10,7 @@ const data3 = [130, -150, 200, 300, -200, 100];
 
 import { DataFrame } from "data-forge";
 import "data-forge-plot";
-import "@data-forge-plot/render";
+import "@plotex/render-image";
 import * as fs from "fs-extra";
 import * as path from "path";
 import { ChartType } from "data-forge-plot";
@@ -34,7 +34,6 @@ async function main(): Promise<void> {
     const plot = df.plot()
         .chartType(ChartType.Bar);
     await plot.renderImage(path.join(outputPath, "image.png"), { openImage: false });
-    await plot.exportWeb(path.join(outputPath, "web"), { overwrite: true, openBrowser: false });
 }
 
 main()

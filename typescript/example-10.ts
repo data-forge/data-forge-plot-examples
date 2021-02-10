@@ -11,7 +11,7 @@ const setosa_y = [ 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.2, 0
 
 import { DataFrame } from "data-forge";
 import "data-forge-plot";
-import "@data-forge-plot/render";
+import "@plotex/render-image";
 import * as fs from "fs-extra";
 import * as path from "path";
 import { ChartType } from "data-forge-plot";
@@ -47,7 +47,6 @@ async function main(): Promise<void> {
                 .setX("setosa_x");
 
     await plot.renderImage(path.join(outputPath, "image.png"), { openImage: false });
-    await plot.exportWeb(path.join(outputPath, "web"), { overwrite: true, openBrowser: false });
 }
 
 main()
